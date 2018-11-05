@@ -1,0 +1,40 @@
+<!--pages/jsq/jsq.wxml-->
+<view class='show' bindtap='list'>  
+  <view>
+    <scroll-view scroll-y='true' class='show-view' scroll-top='{{sumLength}}' scroll-into-view="red">
+    <text>{{leter}}</text>
+    </scroll-view>
+  </view>
+  <view>{{num1}}\n</view>
+  <view wx:if="{{fuhao}}">{{fuhao}}\n</view>
+  <view wx:if="{{num2}}">{{num2}}\n</view>
+  <view wx:if="{{dengyu  && num2}}">={{value}}</view>
+</view>
+<view>
+  <button class='jsq-btn' bindtap='qingchu'>C</button>
+  <button class='jsq-btn' bindtap='shanchu'>X</button>
+  <button class='jsq-btn' bindtap='jisuan'  data-value='÷'>÷</button>
+  <button class='jsq-btn' bindtap='jisuan'  data-value='×'>×</button>
+</view>
+<view>
+  <button class='jsq-btn' bindtap="setnum" data-value='7'>7</button>
+  <button class='jsq-btn' bindtap="setnum" data-value='8'>8</button>
+  <button class='jsq-btn' bindtap="setnum" data-value='9'>9</button>
+  <button class='jsq-btn' bindtap='jisuan'  data-value='+'>+</button>
+</view>
+<view>
+  <button class='jsq-btn' bindtap='setnum' data-value='4'>4</button>
+  <button class='jsq-btn' bindtap='setnum' data-value='5'>5</button>
+  <button class='jsq-btn' bindtap='setnum' data-value='6'>6</button>
+  <button class='jsq-btn' bindtap='jisuan'  data-value='-'>-</button>
+</view>
+<view>
+  <button class='jsq-btn' bindtap='setnum' data-value='1'>1</button>
+  <button class='jsq-btn' bindtap='setnum' data-value='2'>2</button>
+  <button class='jsq-btn' bindtap='setnum' data-value='3'>3</button>
+  <button class='jsq-btn' bindtap='setnum' data-value='0'>0</button>
+</view>
+<view>
+  <button class='btn-deng' bindtap='getsum'>=</button>
+  <button class='btn-dian' bindtap='setnum'  data-value='.'>.</button>
+</view>

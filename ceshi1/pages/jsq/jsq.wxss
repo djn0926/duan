@@ -1,0 +1,25 @@
+/* pages/jsq/jsq.wxss */
+.jsq-btn{
+  width: 25%;
+  float:left;
+  
+}
+.btn-deng{
+  width:75%;
+  float:left;
+ 
+}
+.btn-dian{
+  width:25%;
+  float:left;
+  
+}
+.show{
+  height: 275px;
+  background-color:#fff;
+}
+.show-view{
+  height:150px;
+  width:320px;
+
+}
